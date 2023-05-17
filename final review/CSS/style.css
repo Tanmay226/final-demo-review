@@ -212,18 +212,7 @@ img {
   background: #ffffff;
   border-radius: 5px;
 }
-.card-body .card-title {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 130%;
-  /* identical to box height, or 29px */
 
-  /* Dark grey */
-
-  color: #05181f;
-}
 .card-body .card-text {
   font-family: "Open Sans";
   font-style: normal;
@@ -241,6 +230,10 @@ img {
 .card {
   background-color: #f4f4ee;
   border-radius: 5px 5px 20px 20px;
+}
+.right-arrow{
+  color: rgba(255, 79, 79, 1);
+  font-size: 40px;
 }
 
 .card-button {
@@ -260,6 +253,133 @@ img {
   border: 1px solid transparent;
 }
 
+
+
+/* blog container */
+
+.owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  background: rgba(21, 121, 67, 1);
+  /* fallback for old browsers */
+
+  color: #fff;
+}
+
+.owl-item.active.center .slider-card .card-body .card-title {
+  color: #FFFFFF;
+
+}
+
+.owl-item.active.center .slider-card .card-body .card-text {
+  color: #FFFFFF;
+
+}
+
+.owl-item.active.center .slider-card .card-btn {
+
+  background: #FFFFFF;
+  color: #157943;
+}
+
+.owl-item.active.center .slider-card .card-btn:hover {
+  background: #157943;
+  color: #FFFFFF;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+  display: none !important;
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(60% - 25px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+  background: #FF4F4F !important;
+  border-radius: 50px;
+  width: 91px;
+  height: 66.02px;
+  color: #FFFFFF !important;
+  border: 1px solid transparent !important;
+}
+
+.owl-nav .owl-next:hover {
+  color: #FF4F4F !important;
+  background: transparent !important;
+  border: 1px solid #FF4F4F !important;
+
+
+}
+
+.slider-card {
+  border: 1px solid gray;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #F4F4EE;
+  transform: scale(0.9);
+  opacity: 0.5;
+  transition: all 0.3s;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  margin: 50px 15px 90px 15px;
+
+}
+
+.card-body .card-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  color: #05181f;
+}
+
+.card-body .card-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #05181f;
+  opacity: 0.75;
+}
+
+.card-btn {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  background: #157943;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 83px;
+  height: 30px;
+  border: 1px solid transparent;
+
+}
+
+.card-btn:hover {
+  background: #ffffff;
+  color: #157943;
+  border-color: #157943;
+}
+
+.img-height {
+  height: 200px !important;
+}
+
+
+/* link container */
 .link-container .link a {
   font-family: "Poppins";
   font-style: normal;
@@ -398,9 +518,17 @@ color: #FFFFFF;
 
 }
 
+
+
+
 /* media query */
 
 @media only screen and (max-width: 1400px) {
+/* card container */
+.card-bottom p {
+  line-height: 21px;}
+
+
 }
 @media only screen and (max-width: 1200px) {
   /* home section */
@@ -425,6 +553,12 @@ color: #FFFFFF;
     .booking-btn {
         width: 225px;
         height: 53px;} 
+
+        /* card container */
+        .card-bottom p {
+          line-height: 17px;
+          text-align: left;
+      }
 
 }
 /* laptop  */
@@ -455,6 +589,25 @@ color: #FFFFFF;
 .booking-section p {
     font-size: 31px;
 }
+
+/* card container */
+.card-body .card-title {
+  font-size: 18px;
+  line-height: 127%;}
+  .card-body .card-text {
+    font-size: 14px;
+    line-height: 152%;}
+
+    .container-header .card-header1, .link-header .link-title {
+      font-size: 30px;
+      line-height: 124%;}
+      .navigation-arrow p {
+        font-size: 14px;
+        line-height: 25px;}
+        .right-arrow {
+          font-size: 31px;
+      }
+
 
 }
 /*  tab view */
@@ -489,6 +642,16 @@ color: #FFFFFF;
     width: 214px;
     height: 47px;
     font-size: 16px;
+}
+/* bootstrap slider */
+.carousel-inner {
+  height: 495px;
+  /* border: 1px solid red; */
+}
+/* card container */
+.container-header .card-header1 {
+  font-size: 24px;
+  line-height: 124%;
 }
 
 }
@@ -535,7 +698,10 @@ color: #FFFFFF;
     .footer-btn {
         width: 100%;
     }
-    
+    .card {
+  
+      margin-bottom: 200px;
+  }
 }
 @media only screen and (max-width: 479px) {
   /* home section */
@@ -546,6 +712,18 @@ color: #FFFFFF;
     height: 30px;
     margin-bottom: 10px;
   }
+  /* card container */
+  .container-header .card-header1 {
+    font-size: 17px;
+    line-height: 124%;
+}
+.navigation-arrow p {
+  font-size: 13px;
+  line-height: 25px;
+}
+.right-arrow {
+  font-size: 23px;
+}
 }
 @media only screen and (max-width: 379px) {
   /* nav section */
@@ -557,4 +735,9 @@ color: #FFFFFF;
   .nav-search {
     top: 9%;
   }
+  /* card container */
+  .carousel-inner {
+    height: 407px;
+    /* border: 1px solid red; */
+}
 }
